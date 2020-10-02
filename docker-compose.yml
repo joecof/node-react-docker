@@ -1,0 +1,32 @@
+version: "3"
+services: 
+  server:
+    container_name: server
+    build:
+      context: ./server
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3001:3001"
+    expose:
+      - 3001
+    volumes:
+      - /app/node_modules
+      - ./server:/app
+  web:
+    container_name: web
+    environment:
+      env_file: web.env
+      NODE_ENV: development
+    stdin_open: true
+    build: 
+      context: ./client
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"     
+    volumes:
+      - /client/node_modules
+      - ./client:/client
+    expose:
+      - 3000
+    links: 
+      - server
