@@ -1,2 +1,2 @@
-# cc_vualting
-CC vaulting with global payments/realexpayments API
+# node-react-docker
+A bare minumum node-react-docker boilerplate to speed up development.
