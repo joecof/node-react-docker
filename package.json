@@ -1,0 +1,19 @@
+{
+  "name": "@joecof/react-node-docker",
+  "version": "1.0.0",
+  "description": "CC vaulting with global payments/realexpayments API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joecof/node-react-docker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joecof/node-react-docker/issues"
+  },
+  "homepage": "https://github.com/joecof/node-react-docker#readme"
+}
